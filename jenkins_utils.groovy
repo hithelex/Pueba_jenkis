@@ -14,7 +14,7 @@ try {
             tools.executeEdin()
         }
         stage('Prueba de un nuevo stage_EDIN){
-              tools.nuevaPrueba()
+            tools.nuevaPrueba()
         }            
     }
 } catch (e) {
