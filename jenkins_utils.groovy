@@ -11,7 +11,7 @@ try {
             tools.callToActions("${nombre}" as String)
         }
         stage('execute hello') {
-            tools.executeFuncion()
+            tools.executeEdin()
         }
     }
 } catch (e) {
