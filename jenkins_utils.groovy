@@ -13,7 +13,7 @@ try {
         stage('Prueba Edinnnn') {
             tools.executeEdin()
         }
-        stage('Prueba de un nuevo stage_EDIN){
+        stage('Prueba de un nuevo stage_EDIN'){
             tools.nuevaPrueba()
         }            
     }
