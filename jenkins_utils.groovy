@@ -10,7 +10,7 @@ try {
         stage('Saludo de pipeline') {
             tools.callToActions("${nombre}" as String)
         }
-        stage('execute hello, prueba 0.1') {
+        stage('Prueba Edinnnn') {
             tools.executeEdin()
         }
     }
