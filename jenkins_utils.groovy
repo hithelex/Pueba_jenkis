@@ -1,4 +1,4 @@
-@Library('shared-library@master')
+@Library('shared-library@edin')
 
 import sharedLibrary.toolsJenkisn
 
