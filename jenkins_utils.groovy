@@ -1,23 +1,30 @@
-@Library('shared-library@edin')
-
-import sharedLibrary.toolsJenkisn
-
-def tools = new toolsJenkisn(steps, this)
 def nombre = "Edin"
+
+def callToActions(String nombre) {
+    echo "Hola, ${nombre}, bienvenido al pipeline."
+}
+
+def executeEdin() {
+    echo "Ejecutando la prueba para Edin..."
+}
+
+def nuevaPrueba() {
+    echo "Ejecutando una nueva prueba en el stage_EDIN..."
+}
 
 try {
     node {
         stage('Saludo de pipeline') {
-            tools.callToActions("${nombre}" as String)
+            callToActions(nombre)
         }
         stage('Prueba Edinnnn') {
-            tools.executeEdin()
+            executeEdin()
         }
-        stage('Prueba de un nuevo stage_EDIN'){
-            tools.nuevaPrueba()
+        stage('Prueba de un nuevo stage_EDIN') {
+            nuevaPrueba()
         }            
     }
 } catch (e) {
-    //tools.notifySlack("Error: ${e}")
+    echo "Error: ${e}"
     throw e
 }
